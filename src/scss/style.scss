@@ -6,6 +6,10 @@ a{
     text-decoration: none;
     color:rgb(148, 149, 150)
 }
+
+$color-dark: rgb(56, 56, 56);
+$color-light: rgb(250, 250, 250); 
+
 .header {
     background-color: rgb(246, 247, 249);
     display: flex;
@@ -46,4 +50,58 @@ a{
         }
     }
 }
+}
+
+.footer {
+  background-color: $color-dark;
+  display: flex;
+  flex-direction: column;
+  color: $color-light;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  max-width: 100%;
+  height: 10rem;
+  padding: 5% 30%;
+
+  @media (max-width:720px) {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+    @media (max-width:720px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 380px) {
+      justify-content: center;
+      font-size: 0.8em;
+    }
+
+    width: 100%;
+    height: 65px;
+
+    &-text {
+      margin: 20px;
+
+      &--selected a {
+        text-decoration: none;
+        color: $color-light;
+      }
+    }
+  }
+
+  &__social {
+    text-align: center;
+    &__hashtag {
+      padding: 1rem;
+    }
+  }
+  
 }
