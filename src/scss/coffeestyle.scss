@@ -1,0 +1,59 @@
+$main-font: 'Roboto Condensed', sans-serif;
+$color-dark: rgb(56, 56, 56);
+$color-light: rgb(250, 250, 250);
+
+.main {
+  font-family: $main-font;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  * {
+    font-weight: 100;
+    line-height: 1.6;
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+
+  &__top-info {
+    padding: 1rem;
+    &__text {
+      font-size: 0.8rem;
+    }
+    &__subtext {
+      font-size: 0.6rem;
+    }
+  }
+
+  &__coffee-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+      width: 100%;
+    }
+    &__card {
+      width: 45%;
+      background-color: $color-light;
+      padding: 0;
+      font-size: 0.6rem;
+      margin: 1rem;
+      p {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+body {
+  @media (max-width:720px) {
+  display: none;
+}
+}
