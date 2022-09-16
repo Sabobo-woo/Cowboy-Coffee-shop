@@ -1,6 +1,6 @@
 $main-font:'Roboto Condensed', sans-serif;
 $color-dark: rgb(56, 56, 56);
-$color-light: rgb(250, 250, 250); 
+$color-light: rgb(250, 250, 250);
 
 *{
     padding: 0;
@@ -10,7 +10,6 @@ a{
     text-decoration: none;
     color:rgb(148, 149, 150)
 }
-
 
 .header {
     background-color: rgb(246, 247, 249);
@@ -168,6 +167,7 @@ a{
 
     &__text {
       margin: 20px;
+      white-space: nowrap;
 
       &--selected a {
         color: $color-light;
