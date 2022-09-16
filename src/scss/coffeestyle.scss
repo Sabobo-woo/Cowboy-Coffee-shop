@@ -7,6 +7,9 @@ $color-light: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  @media (max-width:720px) {
+    
+  }
   
   * {
     font-weight: 100;
@@ -55,14 +58,13 @@ $color-light: rgb(250, 250, 250);
       }
     }
     @media (max-width:720px) {
-   justify-content: center;
-    
+    justify-content: center;
   }
   }
 }
 
-body {
-  @media (max-width:720px) {
+// body {
+//   @media (max-width:720px) {
   
-}
-}
+// }
+// }

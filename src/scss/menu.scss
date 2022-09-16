@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 149, 150)
+}
+
+.header {
+    background-color: rgb(246, 247, 249);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 10rem;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    @media (max-width:720px) {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &_logo {
+        & img {
+            height: 9rem;
+        }
+    }
+
+    &_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        @media (max-width:720px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 380px) {
+            justify-content: center;
+            font-size: 0.8em;
+        }
+
+        width: 100%;
+        height: 65px;
+
+        &-text {
+            margin: 20px;
+
+            &_selected a {
+                color: rgb(56, 56, 56);
+            }
+        }
+    }
+}
+
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    >p {
+        font-size: 3rem;
+    }
+}
+
+.menu {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu__1,
+.menu__2,
+.menu__3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+    padding-bottom: 25px;
+
+
+    & h3 {
+        font-weight: normal;
+        padding-bottom: 10px;
+
+    }
+}
+
+main {
+    padding-top: 2%;
+}
+
+//menu sections
+
+.menu__1--espresso,
+{
+width: 48%;
+height: 46px;
+
+&.espresso {
+    width: 100%;
+}
+
+
+
+}
+
+.menu__1--filter,
+{
+width: 100%;
+padding-bottom: 25px;
+
+&.allin {
+    width: 100%;
+}
+}
+
+.all {
+    width: 48%;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.allin {
+        width: 100%;
+    }
+}
+
+.espresso1,
+.espresso2,
+.espresso3,
+.espresso4,
+.espresso5,
+.espresso6,
+.espresso7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+
+    h4 {
+        font-weight: 100;
+        width: 100%;
+
+        p {
+            align-self: flex-end;
+        }
+
+
+    }
+
+}
+
+
+.filters1,
+.filters2,
+.filters3,
+.filters4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+
+
+    h4 {
+        font-weight: 100;
+        width: 100%;
+
+        p {
+            align-self: flex-end;
+        }
+    }
+}
+
+.special1,
+.special2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+
+
+    h4 {
+        font-weight: 100;
+        width: 100%;
+
+        p {
+            align-self: flex-end;
+        }
+    }
+}
+
+.menu__2--iced,
+{
+width: 48%;
+height: 46px;
+
+&.iced {
+    width: 100%;
+}
+}
+
+.menu__2--hot,
+{
+width: 48%;
+height: 46px;
+
+&.hot {
+    width: 100%;
+}
+}
+
+.iced-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+
+
+
+    h4 {
+        font-weight: 100;
+        width: 100%;
+
+        p {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+
+
+.hot-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+
+
+
+    h4 {
+        font-weight: 100;
+        width: 100%;
+
+        p {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+.menu__3--lemo,
+{
+width: 48%;
+height: 46px;
+
+&.lemo {
+    width: 100%;
+}
+}
+
+.menu__3--water,
+{
+width: 48%;
+height: 46px;
+
+&.water {
+    width: 100%;
+}
+}
+
+.lemo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+
+
+
+    h4 {
+        font-weight: 100;
+        width: 100%;
+
+        p {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+.water-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+
+
+
+    h4 {
+        font-weight: 100;
+        width: 100%;
+
+        p {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+@media (max-width:720px) {
+
+    .menu__1,
+    .menu__2,
+    .menu__3 {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 600px;
+    }
+
+}
+
+@media (max-width:720px) {
+
+    .menu__1--espresso,
+    .all,
+    .menu__2--iced,
+    .menu__3--water {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .allin {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        display: none;
+
+    }
+
+    h3 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    } .menu__3--lemo,
+        .menu__2--hot,
+     {
+        display: none;
+    }
+
+
+
+}
+
+
