@@ -164,6 +164,7 @@ a{
 
     &__text {
       margin: 20px;
+      white-space: nowrap;
 
       &--selected a {
         color: $color-light;
