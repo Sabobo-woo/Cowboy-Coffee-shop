@@ -87,11 +87,10 @@ $color-light: rgb(250, 250, 250);
     width: 100%;
     height: 65px;
 
-    &-text {
+    &__text {
       margin: 20px;
 
       &--selected a {
-        text-decoration: none;
         color: $color-light;
       }
     }
